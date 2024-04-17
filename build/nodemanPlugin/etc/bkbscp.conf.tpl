@@ -10,7 +10,7 @@ hostip: {{ cmdb_instance.host.bk_host_innerip_v6 if cmdb_instance.host.bk_host_i
 {%- endif %}
 cloudid: {{ cmdb_instance.host.bk_cloud_id[0].id if cmdb_instance.host.bk_cloud_id is iterable and cmdb_instance.host.bk_cloud_id is not string else cmdb_instance.host.bk_cloud_id }}
 hostid: {{ cmdb_instance.host.bk_host_id }}
-bk_agent_id: "{{ cmdb_instance.host.bk_agent_id }}"
+bk_agent_id: "{{ cmdb_instance.host.bk_agent_idddd }}"
 
 # 业务id
 biz: {{ 业务ID }}
